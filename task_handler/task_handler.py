@@ -13,6 +13,7 @@ def create_task_handler_app():
         print(f"{request.json['specie_handler_port']}")
         SPECIES_TASK_LIST.append({"specie_handler_port": request.json['specie_handler_port'],
                                   "specie_handler_ip": request.json['specie_handler_ip']})
+        print(f"list of species tasks: {SPECIES_TASK_LIST}")
         return 'Hello, World!'
     return app
 

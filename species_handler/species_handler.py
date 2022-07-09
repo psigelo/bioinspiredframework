@@ -10,6 +10,7 @@ def create_species_handler_app(task_handler_port, task_handler_ip, port):
     message = {
         'specie_handler_port': port,
         'specie_handler_ip': "127.0.0.1",  # TODO: get it from script
+
     }
     print(f"url:{url}")
     x = requests.post(url, json=message)
